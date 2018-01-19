@@ -1,0 +1,34 @@
+.about {
+  background-color: aquamarine;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.about::before {
+  content: '';
+  background-image: url('http://d24wuq6o951i2g.cloudfront.net/img/events/id/284/2841600/assets/022.160917FDG019.jpg');
+  background-color: #4468b0;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  transform: skewX(-5deg) translatex(10%);
+  z-index: -1;
+}
+
+.about__wrapper {
+  padding-left: 8%;
+}
+
+.about__wrapper h2 {
+  font-size: 50px;
+}
+
+.about__wrapper p {
+  width: 45%;
+}

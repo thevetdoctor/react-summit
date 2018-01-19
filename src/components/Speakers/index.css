@@ -1,0 +1,42 @@
+.speakers {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 8%;
+  transition-duration: 0.4s;
+}
+
+.speakers.alternate-bg {
+  background-color: aquamarine;
+}
+
+.speakers h2 {
+  font-size: 50px;
+  grid-column-end: 5;
+}
+
+.speaker__box {
+  /*display: grid;*/
+  /*grid-gap: 15px;*/
+  /*grid-template-columns: repeat(2, 1fr);*/
+}
+
+.speaker__box img {
+  border: 3px solid #4468b0;
+  border-radius: 100%;
+  transition-duration: .4s;
+  width: 200px;
+}
+
+.speaker__box > img:hover {
+  transform: scale(1.1);
+}
+
+.speaker__social-media img {
+  border: 0;
+  width: 32px;
+}
+
+.speaker__social-media img:first-of-type {
+  margin-right: 15px;
+}
